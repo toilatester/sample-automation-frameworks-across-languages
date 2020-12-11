@@ -1,5 +1,5 @@
 # Sample Test Automation Framework Across Langugages
-Developing by the brilliant minds and experts at toilatester.This repo provides comprehensive samples of test automation framework that have been developed using the most common programming languages along with applying various design pattern into test automation to increase reusability, extensibility and maintainability of automated tests.
+Developing by the brilliant minds and experts at **toilatester**.This repo provides comprehensive samples of test automation framework that have been developed using the most common programming languages along with applying various design pattern into test automation to increase reusability, extensibility and maintainability of automated tests.
 
 ## Languages
 * Python
