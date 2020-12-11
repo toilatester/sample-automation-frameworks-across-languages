@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<testsuites>
+    <testsuite tests="0" failures="0" errors="0" name="beforeEach hook for Valid login"/>
+    <testsuite tests="0" failures="0" errors="0" name="beforeEach hook for Valid login"/>
+    <testsuite tests="1" failures="0" errors="0" name="Valid login">
+        <testcase name="#1 Valid login"/>
+    </testsuite>
+    <testsuite tests="0" failures="0" errors="0" name="afterEach.always hook for Valid login"/>
+    <testsuite tests="0" failures="0" errors="0" name="beforeEach hook for Invalid login #1 - not register user"/>
+    <testsuite tests="0" failures="0" errors="0" name="beforeEach hook for Invalid login #1 - not register user"/>
+    <testsuite tests="1" failures="0" errors="0" name="Invalid login #1 - not register user">
+        <testcase name="#2 Invalid login #1 - not register user"/>
+    </testsuite>
+    <testsuite tests="0" failures="0" errors="0" name="afterEach.always hook for Invalid login #1 - not register user"/>
+</testsuites>

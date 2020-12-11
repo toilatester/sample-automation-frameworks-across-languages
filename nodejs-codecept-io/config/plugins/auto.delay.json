@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "delayBefore": 150,
+  "delayAfter": 150,
+  "methods": [
+    "click",
+    "fillField",
+    "checkOption",
+    "pressKey",
+    "doubleClick",
+    "doubleClick",
+    "clearField",
+    "waitForClickable"
+  ]
+}

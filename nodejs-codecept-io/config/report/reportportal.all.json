@@ -1,0 +1,10 @@
+{
+  "host": "http://localhost:8080",
+  "token": "token",
+  "endpoint": "http://localhost:8080/api/v1",
+  "launch": "ALl_GUI",
+  "project": "all_gui",
+  "attachPicturesToLogs": true,
+  "takeScreenshot": "onFailure",
+  "debug": false
+}

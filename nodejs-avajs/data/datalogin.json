@@ -1,0 +1,14 @@
+[
+  {
+    "context": "Valid login",
+    "username": "user",
+    "password": "pass",
+    "error": null
+  },
+  {
+    "context": "Invalid login 1 - not register user",
+    "username": "abccongatrong",
+    "password": "123",
+    "error": "Incorrect credentials, please try again."
+  }
+]

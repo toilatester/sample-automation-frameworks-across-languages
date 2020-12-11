@@ -1,0 +1,2 @@
+class TestContextException(Exception):
+    pass

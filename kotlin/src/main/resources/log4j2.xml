@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <properties>
+        <property name="pattern">[%d{HH:mm:ss}] %-5p (%F:%L) - %m%n</property>
+    </properties>
+    <appenders>
+        <ReportPortalLog4j2Appender name="ReportPortalAppender">
+            <PatternLayout pattern="${pattern}" />
+        </ReportPortalLog4j2Appender>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="${pattern}" />
+        </Console>
+    </appenders>
+    <loggers>
+        <root level="all">
+            <appender-ref ref="ReportPortalAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </root>
+    </loggers>
+</configuration>

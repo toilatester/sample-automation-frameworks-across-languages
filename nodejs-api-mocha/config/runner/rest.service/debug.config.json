@@ -1,0 +1,11 @@
+{
+  "host": "sample.host.com",
+  "port": "22",
+  "protocol": "sftp",
+  "env": "qa",
+  "namespace": "sample",
+  "baseUrl": "https://sample.com",
+  "baseAppUrl": "https://apps.sample.com",
+  "timeout": 1000000,
+  "impersonateUserName": "qa_auto_admin"
+}

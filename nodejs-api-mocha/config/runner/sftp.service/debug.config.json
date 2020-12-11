@@ -1,0 +1,9 @@
+{
+  "host": "sample.host.com",
+  "port": "22",
+  "protocol": "sftp",
+  "username": "user",
+  "password": "pass",
+  "ediRemoteDirectory": "/root/folder/",
+  "ediXmlLocalFolder": "data/xml"
+}

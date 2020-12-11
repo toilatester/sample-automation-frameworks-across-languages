@@ -1,0 +1,28 @@
+{
+    "es": {
+        "dayNames": [
+            "Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb",
+            "Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"
+        ],
+        "monthNames": [
+            "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic",
+            "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+        ],
+        "masks": {
+            "default": "dddd, d 'de' mmmm yyyy"
+        }
+    },
+    "vi": {
+        "dayNames": [
+            "T2", "T3", "T4", "T5", "T6", "T7", "CN",
+            "Thu 2", "Thu 3", "Thu 4", "Thu 5", "Thu 6", "Thu 7", "Chu Nhat"
+        ],
+        "monthNames": [
+            "Thang 1", "Thang 2", "Thang 3", "Thang 4", "Thang 5", "Thang 6", "Thang 7", "Thang 8", "Thang 9", "Thang 10", "Thang 11", "Thang 12",
+            "Thang 1", "Thang 2", "Thang 3", "Thang 4", "Thang 5", "Thang 6", "Thang 7", "Thang 8", "Thang 9", "Thang 10", "Thang 11", "Thang 12"
+        ],
+        "masks": {
+            "default": "dddd, d mmmm 'nam' yyyy"
+        }
+    }
+}

@@ -1,0 +1,151 @@
+{
+  "tests": ".\refactor\\ui-automation\\scenarios\\**\\*.js",
+  "output": ".\refactor\\ui-automation\\reports",
+  "include": {
+    "I": ".\refactor\\ui-automation\\pom\\common\\base.steps.js",
+    "I_Authenticate": ".\refactor\\ui-automation\\pom\\login\\login.steps.js",
+    "At_Home_I": ".\refactor\\ui-automation\\pom\\home\\home.steps.js",
+    "At_Vendor_I": ".\refactor\\ui-automation\\pom\\vendor\\vendor.steps.js",
+    "At_Count_I": ".\refactor\\ui-automation\\pom\\count\\count.steps.js",
+    "At_Order_I": ".\refactor\\ui-automation\\pom\\order\\order.steps.js",
+    "At_Receive_I": ".\refactor\\ui-automation\\pom\\receive\\receive.steps.js"
+  },
+  "plugins": {
+    "autoDelay": {
+      "enabled": true,
+      "delayBefore": 150,
+      "delayAfter": 150,
+      "methods": [
+        "click",
+        "fillField",
+        "checkOption",
+        "pressKey",
+        "doubleClick",
+        "doubleClick",
+        "clearField",
+        "waitForClickable"
+      ]
+    },
+    "puppeteerCoverage": {
+      "enabled": false,
+      "uniqueFileName": true
+    },
+    "screenshotOnFail": {
+      "enabled": false,
+      "uniqueScreenshotNames": true
+    },
+    "stepByStepReport": {
+      "enabled": false,
+      "fullPageScreenshots": false,
+      "deleteSuccessful": false
+    },
+    "loggerListener": {
+      "require": ".\\core\\extension\\logger.listener.js",
+      "uniqueFileName": true,
+      "enabled": true
+    },
+    "reportPortalListener": {
+      "require": ".\\core\\extension\\report.portal.listener.js",
+      "uniqueFileName": true,
+      "enabled": true
+    }
+  },
+  "helpers": {
+    "REST": {
+      "timeout": 10000,
+      "defaultHeaders": {},
+      "endpoint": ""
+    },
+    "Puppeteer": {
+      "url": "http://localhost",
+      "show": true,
+      "getPageTimeout": 300000,
+      "waitForAction": 150,
+      "waitForTimeout": 30000,
+      "waitForNavigation": [
+        "networkidle0"
+      ],
+      "uniqueScreenshotNames": true,
+      "fullPageScreenshots": true,
+      "chrome": {
+        "defaultViewport": {
+          "width": 1920,
+          "height": 800
+        },
+        "args": [
+          "--window-size=1920,800"
+        ]
+      }
+    },
+    "COMMON_ACTION_EXTENDS": {
+      "require": ".\refactor\\ui-automation\\core\\extension\\actions.common.js",
+      "engine": [
+        "WebDriverIO",
+        "WebDriver",
+        "Protractor",
+        "Appium",
+        "Nightmare",
+        "Puppeteer"
+      ]
+    },
+    "ELEMENT_ACTION_EXTENDS": {
+      "require": ".\refactor\\ui-automation\\core\\extension\\actions.elements.js",
+      "engine": [
+        "WebDriverIO",
+        "WebDriver",
+        "Protractor",
+        "Appium",
+        "Nightmare",
+        "Puppeteer"
+      ],
+      "loadingElementLocator": {
+        "xpath": "//div[contains(@class,\"EchoSpinner\") or contains(@class,\"InternalLoading\")]"
+      },
+      "allowActionLogPicture": [
+        "click",
+        "clickLink",
+        "doubleClick",
+        "fillField",
+        "clearField",
+        "checkOption",
+        "pressKey",
+        "amOnPage",
+        "seeElement",
+        "waitForElement",
+        "waitForInvisible",
+        "waitForVisible",
+        "waitNumberOfVisibleElements",
+        "waitForValue",
+        "waitForText",
+        "seeNumberOfElements",
+        "seeNumberOfVisibleElements",
+        "moveCursorTo",
+        "grabTextFrom",
+        "waitForLoadingIconInvisible"
+      ],
+      "slowDownInputTime": 50,
+      "maxRetryInput": 3
+    }
+  },
+  "reportName": "mocha-multi-reporters",
+  "mocha": {
+    "reporterOptions": {
+      "reporterEnabled": "mocha-jenkins-reporter,mochawesome-screenshots",
+      "mochaJenkinsReporterReporterOptions": {
+        "junit_report_path": ".\refactor\\ui-automation\\reports/mocha-reports/JUnitResult.xml"
+      },
+      "mochawesomeScreenshotsReporterOptions": {
+        "reportDir": ".\refactor\\ui-automation\\reports/mocha-reports"
+      },
+      "codeceptjs-cli-reporter": {
+        "stdout": "-",
+        "options": {
+          "verbose": true,
+          "steps": true
+        }
+      }
+    }
+  },
+  "bootstrap": ".\\core\\runner\\hook.js",
+  "teardown": ".\\core\\runner\\hook.js"
+}

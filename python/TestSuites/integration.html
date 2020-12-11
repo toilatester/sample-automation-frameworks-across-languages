@@ -1,0 +1,23 @@
+<body>
+
+          <!-- sample_app script tag (chatbox.js) -->
+          <script>
+            (function(a,t,h,e,n,ka){
+              a.addEventListener("load", function(){
+                var boby=t.getElementsByTagName('body')[0]; 
+                var bot=t.createElement('script');
+                bot.async=1;
+                bot.src = h;
+                bot.type='text/javascript';
+                bot.setAttribute('id', 'sample_app-script-tag');
+                bot.setAttribute('channelId', '0cead50d-2976-47ff-bf0a-8410afac5ab5');
+                bot.setAttribute('channelToken', '36b9010b-8ead-4a7e-9666-7cb54bb6d7b8');
+                bot.setAttribute('botId', '728557ec-1353-4332-bb3a-87b159525c97');
+                boby.appendChild(bot);
+              });  
+            })(window, document, 'http://localhost:9999/chatbox.js');                      
+          </script>        
+      
+
+</body>
+

@@ -1,0 +1,12 @@
+Feature: Sample API Test for Laura 1
+Test for Laura Login page
+
+    @Suite4
+    Scenario Outline: Test with https://private.domain.com/
+        Given I send a request with email <email> and password <hashedPassword>
+        Then I should see the response code is 200
+        And I should see the response contains jwtToken and username is <username>
+
+        Examples:
+            | email             | hashedPassword                     | username |
+            | "hello@gmail.com" | "388838222891c18a3be8b86c81ca4451" | "hello"  |

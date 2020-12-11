@@ -1,0 +1,6 @@
+{
+  "reporterEnabled": "mocha-jenkins-reporter",
+  "mochaJenkinsReporterReporterOptions": {
+    "junit_report_path": "reports/JUnitResult.xml"
+  }
+}

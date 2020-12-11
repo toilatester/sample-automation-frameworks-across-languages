@@ -1,0 +1,6 @@
+const DATE_FORMAT = {
+  MM_DD_YYYY: 'MM/DD/YYYY',
+  DD_MM_YYYY: 'DD/MM/YYYY'
+};
+
+exports.DATE_FORMAT = DATE_FORMAT;

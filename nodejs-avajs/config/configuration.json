@@ -1,0 +1,20 @@
+{
+  "baseUrl": "http://localhost:8080/test/",
+  "browserName": "chrome",
+  "browserList": [
+    "chrome",
+    "firefox"
+  ],
+  "capability": {
+    "setPageLoadStrategy": "normal"
+  },
+  "videoRecord": true,
+  "videoFolder": "videos",
+  "useSeleniumGrid": true,
+  "seleniumGridUrl": "http://localhost:4444/wd/hub",
+  "reportconfig": {
+    "jsonDir": "./reports/",
+    "reportPath": "./reports/",
+    "reportName": "Test run ne"
+  }
+}

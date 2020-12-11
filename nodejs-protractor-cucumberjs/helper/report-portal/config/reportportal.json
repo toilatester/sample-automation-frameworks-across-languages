@@ -1,0 +1,9 @@
+{
+  "token": "5c8c43b8-b56c-4edc-8b0f-1a1450114b54",
+  "endpoint": "http://localhost:6060/api/v1",
+  "launch": "samole-protractor-demo",
+  "project": "sample-demo",
+  "attachPicturesToLogs": true,
+  "takeScreenshot": "onFailure",
+  "debug": true
+}

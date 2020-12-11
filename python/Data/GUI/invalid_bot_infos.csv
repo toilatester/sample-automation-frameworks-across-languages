@@ -1,0 +1,5 @@
+botname,website_url,error_message
+,,Bot name must not be empty.
+,www.katalon.com,Bot name must not be empty.
+Random Name,,Website address must not be empty.
+Random Name,www,Invalid Website address.

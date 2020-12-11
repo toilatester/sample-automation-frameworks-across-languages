@@ -1,0 +1,13 @@
+{
+  "host": "samplehost.com",
+  "port": "22",
+  "protocol": "sftp",
+  "loginDomain": "logindomain",
+  "env": "qa",
+  "namespace": "env_qa_auto",
+  "baseUrl": "https://maindomain.sample-auth.io",
+  "cookieManager": "",
+  "securityMethod": "Cookie",
+  "timeout": 1000000,
+  "impersonateUserName": "env_qa_auto_admin"
+}

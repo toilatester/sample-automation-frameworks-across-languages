@@ -1,0 +1,9 @@
+username,email,password,error_message
+,,,Full name must not be empty.
+,locmai@yahoo.com,,Full name must not be empty.
+,,user1234,Full name must not be empty.
+Something,,,Email address must not be empty.
+Something,,user1234,Email address must not be empty.
+Something,locmai@yahoo.com,,Please input your password.
+Something,thisisnotanemail,user1234,Your email address is invalid.
+Something,locmai@yahoo.com,1234,Password must be between 8 and 255 characters.

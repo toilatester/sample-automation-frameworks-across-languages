@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.4 on darwin)" generated="20180205 13:39:32.022">
+<suite id="s1" name="Sample" source="/Users/minhhoang/Workspace/WorkSpace/Git/sample-project/sample_app-Auto/sample.robot">
+<kw name="Create Driver" library="Core.Config.DriverFactory.DriverFactory" type="setup">
+<status status="PASS" starttime="20180205 13:39:32.107" endtime="20180205 13:39:35.939"></status>
+</kw>
+<test id="s1-t1" name="Sample Test">
+<kw name="Open Register Page" library="GUI.POM.RegisterPage.RegisterPage">
+<status status="PASS" starttime="20180205 13:39:35.941" endtime="20180205 13:39:40.367"></status>
+</kw>
+<kw name="Register With Account" library="GUI.POM.RegisterPage.RegisterPage">
+<arguments>
+<arg>Test Another</arg>
+<arg>anothernewemailsample@sample.com</arg>
+<arg>12345678</arg>
+</arguments>
+<status status="PASS" starttime="20180205 13:39:40.368" endtime="20180205 13:39:41.441"></status>
+</kw>
+<kw name="Click Register Button" library="GUI.POM.RegisterPage.RegisterPage">
+<status status="PASS" starttime="20180205 13:39:41.441" endtime="20180205 13:39:41.506"></status>
+</kw>
+<status status="PASS" starttime="20180205 13:39:35.940" endtime="20180205 13:39:41.507" critical="yes"></status>
+</test>
+<kw name="Dispose Driver" library="Core.Config.DriverFactory.DriverFactory" type="teardown">
+<status status="PASS" starttime="20180205 13:39:41.507" endtime="20180205 13:39:41.613"></status>
+</kw>
+<status status="PASS" starttime="20180205 13:39:32.023" endtime="20180205 13:39:41.613"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Sample">Sample</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

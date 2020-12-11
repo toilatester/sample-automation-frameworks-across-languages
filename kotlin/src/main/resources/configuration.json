@@ -1,0 +1,17 @@
+{
+  "applicationUrl": "http://localhost:8080/test",
+  "driver": "chrome",
+  "elementTimeout": 10,
+  "remoteURL": "",
+  "capabilities": {
+    "browserName": "chrome",
+    "deviceName": "Iphone 7",
+    "platformVersion": "11.0"
+  },
+  "paDataSource": {
+    "connectionString": "jdbc:mysql://localhost:3308/",
+    "driver": "com.mysql.cj.jdbc.Driver",
+    "user": "testing",
+    "password": "pass@pass"
+  }
+}

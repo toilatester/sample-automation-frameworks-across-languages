@@ -1,0 +1,7 @@
+email,password,error_message
+,,Email address must not be empty.
+,user1234,Email address must not be empty.
+invalidemail,,Your email address is invalid.
+invalidemail,user1234,Your email address is invalid.
+locmai@gmail.com,user,Password must be between 8 and 255 characters.
+locmai@gmail.com,,Password must not be empty.

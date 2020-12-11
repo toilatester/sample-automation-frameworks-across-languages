@@ -1,0 +1,25 @@
+{
+  "name": "avajs-automation-fw",
+  "version": "1.0.0",
+  "description": "test framework using avajs",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "toilatester",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^2.4.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "simple-ava-html-reporter": "^1.0.1"
+  },
+  "ava": {},
+  "dependencies": {
+    "allure-commandline": "^2.13.0",
+    "chromedriver": "^78.0.1",
+    "mysql": "^2.17.1",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "authenticateUrl": "https://authp.sample-auth.io/oidc/index.html",
+  "logoutUrl": "https://authp.sample-auth.io/logout?redirect=https://authp.sample-auth.io",
+  "appUrl": "https://apps.sample-auth.io",
+  "namespace": "env_qa_auto",
+  "env": "qa",
+  "actionTimeout": 30,
+  "pageLoadTimeOut": 180,
+  "viewport": "",
+  "impersonateUserName": "env_qa_auto"
+}

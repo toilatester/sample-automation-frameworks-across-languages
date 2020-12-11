@@ -1,0 +1,16 @@
+base_url: http://localhost:3000
+browser: chrome
+api_url: localhost:7000
+gui_url: localhost:3000
+protocol: http
+local_url: localhost
+database_port: 27017
+website_url: http://localhost/
+database_url: localhost
+ssh_port: 22
+redis_host: localhost
+redis_port: 30374
+mongodb_host: localhost
+mongodb_user: user
+mongodb_pass: sample@2018
+mongodb_db_name: sample

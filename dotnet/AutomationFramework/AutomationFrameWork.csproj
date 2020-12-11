@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{314AF551-616F-455B-968A-2FB747B07E56}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutomationFrameWork</RootNamespace>
+    <AssemblyName>AutomationFrameWork</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SonarQubeTestProject>False</SonarQubeTestProject>
+    <SonarQubeExclude>
+    </SonarQubeExclude>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="appium-dotnet-driver, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Packages\Appium.WebDriver.2.0.0.1\lib\net45\appium-dotnet-driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\Packages\Castle.Core.4.0.0-beta001\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.1.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\Packages\EPPlus.4.1.0\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Excel">
+      <HintPath>..\Packages\ExcelDataReader.2.1.2.3\lib\net45\Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Cecil, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\Packages\NUnit.Engine.3.4.1\lib\Mono.Cecil.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\Packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit-agent, Version=3.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Packages\NUnit.Engine.3.4.1\lib\nunit-agent.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit-agent-x86, Version=3.4.1.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\Packages\NUnit.Engine.3.4.1\lib\nunit-agent-x86.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.engine, Version=3.4.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\Packages\NUnit.Engine.3.4.1\lib\nunit.engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.engine.api, Version=3.0.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\Packages\NUnit.Engine.3.4.1\lib\nunit.engine.api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.4.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\Packages\NUnit.3.4.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Selenium.WebDriver.Extensions">
+      <HintPath>..\Packages\Selenium.WebDriver.Extensions.2.0.0\lib\net45\Selenium.WebDriver.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Packages\Selenium.WebDriver.3.0.0-beta1\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Packages\Selenium.Support.3.0.0-beta1\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <EmbeddedResource Include="Base\Reporter\EmbeddedResources\Octicons\octicons.css" />
+    <EmbeddedResource Include="Base\Reporter\EmbeddedResources\Octicons\octicons.svg" />
+    <EmbeddedResource Include="Base\Reporter\EmbeddedResources\JQuery\jquery-1.11.0.min.js" />
+    <EmbeddedResource Include="Base\Reporter\EmbeddedResources\Primer\primer.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Base\Reporter\EmbeddedResources\Octicons\octicons.eot" />
+    <EmbeddedResource Include="Base\Reporter\EmbeddedResources\Octicons\octicons.ttf" />
+    <EmbeddedResource Include="Base\Reporter\EmbeddedResources\Octicons\octicons.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Base\Reporter\EmbeddedResources\Highstock\" />
+    <Folder Include="Base\TestEventListener\EmbeddedResources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionKeywords\MobileKeywords.cs" />
+    <Compile Include="ActionKeywords\WebKeywords.cs" />
+    <Compile Include="Base\Driver\Core\DriverManager.cs" />
+    <Compile Include="Base\Driver\HeadlessDriver\PhantomJSBrowser.cs" />
+    <Compile Include="Base\Driver\MobileDriver\Android.cs" />
+    <Compile Include="Base\Driver\MobileDriver\iOS.cs" />
+    <Compile Include="Base\Driver\RemoteDriver\RemoteBrowser.cs" />
+    <Compile Include="Base\Driver\Utils\BrowserType.cs" />
+    <Compile Include="Base\Driver\Utils\Constants.cs" />
+    <Compile Include="Base\Driver\Utils\DriverConfiguration.cs" />
+    <Compile Include="Base\Driver\WebDriver\ChromeDesktop.cs" />
+    <Compile Include="Base\Driver\Interface\IDrivers.cs" />
+    <Compile Include="Base\Driver\WebDriver\FirefoxDesktop.cs" />
+    <Compile Include="Base\Driver\WebDriver\InternetExplorerDesktop.cs" />
+    <Compile Include="Base\Driver\WebDriver\iPad.cs" />
+    <Compile Include="Base\Driver\WebDriver\iPhone4.cs" />
+    <Compile Include="Base\Driver\WebDriver\iPhone5.cs" />
+    <Compile Include="Base\Driver\WebDriver\iPhone6.cs" />
+    <Compile Include="Base\Driver\WebDriver\Nexus7.cs" />
+    <Compile Include="Base\Driver\WebDriver\Nexus6.cs" />
+    <Compile Include="Base\Driver\WebDriver\SamsungS4.cs" />
+    <Compile Include="Base\Exception\StepErrorException.cs" />
+    <Compile Include="Base\PageObjectModel\PageAction\BasePageInstance.cs" />
+    <Compile Include="Base\PageObjectModel\PageAction\BasePageMobile.cs" />
+    <Compile Include="Base\PageObjectModel\PageAction\BasePageWeb.cs" />
+    <Compile Include="Base\PageObjectModel\PageElement\BaseMobileElements.cs" />
+    <Compile Include="Base\PageObjectModel\PageElement\BaseWebElements.cs" />
+    <Compile Include="Base\Reporter\Main\Report.cs" />
+    <Compile Include="Base\Reporter\ReportAttributes\EventNotification.cs" />
+    <Compile Include="Base\Reporter\ReportAttributes\HTML.cs" />
+    <Compile Include="Base\Reporter\ReportAttributes\Notification.cs" />
+    <Compile Include="Base\Reporter\ReportAttributes\TestRemark.cs" />
+    <Compile Include="Base\Reporter\ReportElements\CSSElements\CssElement.cs" />
+    <Compile Include="Base\Reporter\ReportElements\CSSElements\CssPage.cs" />
+    <Compile Include="Base\Reporter\ReportElements\CSSElements\CssSet.cs" />
+    <Compile Include="Base\Reporter\ReportElements\CSSElements\StyleAttribute.cs" />
+    <Compile Include="Base\Reporter\ReportElements\ReportElementsCore\HtmlPage.cs" />
+    <Compile Include="Base\Reporter\ReportElements\ReportElementsCore\PageGenerator.cs" />
+    <Compile Include="Base\Reporter\ReportElements\ReportSections\MainPageSection\FooterSection.cs" />
+    <Compile Include="Base\Reporter\ReportElements\ReportSections\MainPageSection\MenuSection.cs" />
+    <Compile Include="Base\Reporter\ReportElements\ReportSections\MainPageSection\StatisticsSection.cs" />
+    <Compile Include="Base\Reporter\ReportElements\ReportSections\MainPageSection\TestListSection.cs" />
+    <Compile Include="Base\Reporter\ReportElements\ReportSections\MainPageSection\TimelineSection.cs" />
+    <Compile Include="Base\Reporter\ReportElements\ReportSections\MainPage\MainInfoChart.cs" />
+    <Compile Include="Base\Reporter\ReportElements\ReportSections\MainPage\MainInformationSection.cs" />
+    <Compile Include="Base\Reporter\ReportElements\TestReportHtml\ReportDetailsPage\NunitTestHtml.cs" />
+    <Compile Include="Base\Reporter\ReportElements\TestReportHtml\ReportDetailsPage\ReportJsHighstock.cs" />
+    <Compile Include="Base\Reporter\ReportElements\TestReportHtml\ReportSections\EnvironmentSection.cs" />
+    <Compile Include="Base\Reporter\ReportElements\TestReportHtml\ReportSections\FailureSection.cs" />
+    <Compile Include="Base\Reporter\ReportElements\TestReportHtml\ReportSections\OutputSection.cs" />
+    <Compile Include="Base\Reporter\ReportElements\TestReportHtml\ReportSections\ScreenshotsSection.cs" />
+    <Compile Include="Base\Reporter\ReportElements\TestReportHtml\ReportSections\TestEventsSection.cs" />
+    <Compile Include="Base\Reporter\ReportElements\TestReportHtml\ReportSections\TestHistorySection.cs" />
+    <Compile Include="Base\Reporter\ReportElements\TestReportHtml\ReportSections\TestResultSection.cs" />
+    <Compile Include="Base\Reporter\ReportManager\Notifications\SingleTestSubscription.cs" />
+    <Compile Include="Base\Reporter\ReportManager\Notifications\Subsciption.cs" />
+    <Compile Include="Base\Reporter\ReportManager\Remarks\Remark.cs" />
+    <Compile Include="Base\Reporter\ReportUtils\GuidConverter.cs" />
+    <Compile Include="Base\Reporter\ReportUtils\MainStatistics.cs" />
+    <Compile Include="Base\Reporter\ReportUtils\Output.cs" />
+    <Compile Include="Base\TestEventListener\TestListener.cs" />
+    <Compile Include="Extensions\DoubleExtensions.cs" />
+    <Compile Include="Extensions\EmailInformationsExtensions.cs" />
+    <Compile Include="Extensions\EmailMessageExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\FindElementsExtensions.cs" />
+    <Compile Include="Extensions\WebDriverExtension.cs" />
+    <Compile Include="Helper\DataHelper.cs" />
+    <Compile Include="Helper\ReportConfigurationHelper.cs" />
+    <Compile Include="Helper\ReportXMLHelper.cs" />
+    <Compile Include="Helper\ReportEmailHelper.cs" />
+    <Compile Include="Base\Reporter\ReportManager\Notifications\EmailInformations.cs" />
+    <Compile Include="Base\Reporter\ReportManager\Notifications\EmailGenerator.cs" />
+    <Compile Include="Base\Reporter\ReportManager\ReportItems\ReportConfiguration.cs" />
+    <Compile Include="Base\Reporter\ReportManager\ReportItems\TestSuiteInformations.cs" />
+    <Compile Include="Base\Reporter\ReportManager\ReportItems\TestInformations.cs" />
+    <Compile Include="Base\Reporter\ReportManager\Screenshots\Screenshot.cs" />
+    <Compile Include="Base\Reporter\ReportManager\Screenshots\ScreenshotHelper.cs" />
+    <Compile Include="Base\Reporter\ReportManager\Screenshots\ScreenshotTaker.cs" />
+    <Compile Include="Base\Reporter\ReportManager\TestEvents\EventDurationSubscription.cs" />
+    <Compile Include="Base\Reporter\ReportManager\TestEvents\TestEvent.cs" />
+    <Compile Include="Base\Reporter\ReportUtils\ReportColor.cs" />
+    <Compile Include="Base\Reporter\ReportUtils\InternalLogs.cs" />
+    <Compile Include="Base\Reporter\ReportElements\HtmlCustomElements\Tree.cs" />
+    <Compile Include="Base\Reporter\ReportElements\HtmlCustomElements\Bullet.cs" />
+    <Compile Include="Base\Reporter\ReportElements\HtmlCustomElements\HorizontalBar.cs" />
+    <Compile Include="Base\Reporter\ReportElements\HtmlCustomElements\HorizontalBarElement.cs" />
+    <Compile Include="Base\Reporter\ReportElements\HtmlCustomElements\HrefButtonBase.cs" />
+    <Compile Include="Base\Reporter\ReportElements\HtmlCustomElements\HtmlBaseElement.cs" />
+    <Compile Include="Base\Reporter\ReportElements\HtmlCustomElements\OpenButton.cs" />
+    <Compile Include="Base\Reporter\ReportElements\HtmlCustomElements\ReportMenuItem.cs" />
+    <Compile Include="Base\Reporter\ReportElements\HtmlCustomElements\SectionName.cs" />
+    <Compile Include="Base\Reporter\ReportElements\HtmlCustomElements\Tooltip.cs" />
+    <Compile Include="Base\PageObjectModel\PageValidation\BaseMobileValidation.cs" />
+    <Compile Include="Base\PageObjectModel\PageValidation\BaseWebValidation.cs" />
+    <Compile Include="Helper\ReportHelper.cs" />
+    <Compile Include="Helper\ReportTestHelper.cs" />
+    <Compile Include="Helper\TestSuiteReportHelper.cs" />
+    <Compile Include="Base\NodeServer\NodeFactory.cs" />
+    <Compile Include="Helper\CSSHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helper\DriverHelper.cs" />
+    <Compile Include="Extensions\HTMLTextWriterExtensions.cs" />
+    <Compile Include="Utils\ExcelUtilities.cs" />
+    <Compile Include="Utils\Utilities.cs" />
+    <Compile Include="Helper\ValidateHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Base\Reporter\EmbeddedResources\JQuery\jquery-1.11.0.min.js" />
+    <Content Include="Base\Reporter\EmbeddedResources\Primer\primer.css" />
+    <Content Include="Base\Reporter\EmbeddedResources\Octicons\octicons.css" />
+    <Content Include="Base\Reporter\EmbeddedResources\Octicons\octicons.eot" />
+    <Content Include="Base\Reporter\EmbeddedResources\Octicons\octicons.svg" />
+    <Content Include="Base\Reporter\EmbeddedResources\Octicons\octicons.ttf" />
+    <Content Include="Base\Reporter\EmbeddedResources\Octicons\octicons.woff" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
